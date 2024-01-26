@@ -1,13 +1,25 @@
-let boolTog=0;
-let setting=document.querySelector("#setting")
-$("#setting").click(function(){
-    if(boolTog===0)
-    {
-        boolTog=1;
-        document.getElementById("setting").style.color="blue";
+class ToggleWidth {
+    constructor(navId, settingId) {
+        this.nav = $(navId);
+        this.setting = $(settingId);
+        this.boolTog = 0;
+
+        // Event listener for the setting element
+        this.setting.on("click", () => this.toggleWidth());
     }
-    else
-    {
-        boolTog=0;
+
+    toggleWidth() {
+        if (this.boolTog === 0) {
+            this.boolTog = 1;
+            this.nav.animate({ width: "0%" }, 2000);
+            this.setting.animate({left:"0"},2000)
+        } else {
+            this.nav.animate({ width: "16%" }, 2000);
+            this.setting.animate({left:"100%"},2000)
+
+            this.boolTog = 0;
+        }
     }
-})
+}
+
+export { ToggleWidth };

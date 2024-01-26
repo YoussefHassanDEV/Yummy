@@ -15,3 +15,13 @@ mealFetcher.getMultipleMeals(50).then(meals => {
     home.innerHTML=cartona
 });
 // console.log(cartona);
+let boolTog=0;
+let setting=document.querySelector("#setting")
+setting.addEventListener("click",function(){
+console.log("adasdasd");
+})
+import { ToggleWidth } from './Nav.js'; // Import the ToggleWidth class
+
+// Create an instance of ToggleWidth
+const toggleWidthInstance = new ToggleWidth("#Nav", "#setting");
+toggleWidthInstance.toggleWidth()

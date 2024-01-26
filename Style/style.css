@@ -55,6 +55,8 @@
   left: 200px;
   top: 20px;
   cursor: pointer;
+  z-index: 999991;
+
 }
 .col-md-3{
   cursor: pointer;

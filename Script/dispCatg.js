@@ -22,7 +22,7 @@ class discat {
             console.log(data);
             console.log(data.categories.length);
             for (let i = 0; i < data.categories.length; i++) {
-                this.cartona += `<div class="bg-dark  card col-md-3 g-1">
+                this.cartona += `<div class="bg-dark  card col-md-3 g-1 h-25">
                 <img src="${data.categories[i].strCategoryThumb}" alt="">
                 ${data.categories[i].strCategory}
                 </div>`;

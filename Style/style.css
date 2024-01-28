@@ -74,3 +74,6 @@
   min-height: max-content;
 
 }
+#Area{
+  display: none;
+}

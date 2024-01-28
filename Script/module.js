@@ -7,6 +7,8 @@ import { Searchlet } from './SearchLet.js';
 import { dispSearch } from './displaySearch.js'
 import { ToggleWidth } from './Nav.js'; // Import the ToggleWidth class
 import {Dispcatsett} from './dispcatgsettings.js';
+import { disArea } from './disArea.js';
+import { DispAreasett } from './disAreaSet.js';
 Loader.fadeOutLoader();
 mealFetcher.getMultipleMeals(50).then(meals => {
     let cartona = '';
@@ -31,3 +33,5 @@ const searchlet = new Searchlet("#searchletter");
 const SearchName1 = new SearchName("#Name")
 const discat1 = new discat("#categories")
 const disset1=new Dispcatsett("#categories")
+const disArea1=new disArea("#area")
+const DispAreasett1=new DispAreasett("#area")

@@ -12,6 +12,8 @@ class DispAreasett {
             $("#Area").removeClass("d-block")
             $("#Home").show(500)
             $("#Categ").fadeOut(500)
+            $("#Area").slideUp("1000")
+
         }
         else {
             this.flag = 0

@@ -8,6 +8,7 @@ class dispSearch {
         if (this.flag === 0) {
             this.flag=1
             $("#SearchButtons").slideUp(1000)
+            $("#Area").slideUp("1000")
             $("#Home").show(1000)  
             $('#Categ').slideUp(1000);
             $("#SearchButtons").addClass("d-none")

@@ -49,6 +49,7 @@
   bottom: 0;
   width: 200px;
   z-index: 991;
+  
 }
 .nav .fa-solid{
   position: absolute;
@@ -58,7 +59,18 @@
   z-index: 999991;
 
 }
+.nav h3{
+  position: relative;
+  cursor: pointer;
+}
 .col-md-3{
   cursor: pointer;
+
+}
+#SearchButtons{
+  background-color: #271b1b;
+  display: flex;
+  justify-content: center;
+  min-height: max-content;
 
 }

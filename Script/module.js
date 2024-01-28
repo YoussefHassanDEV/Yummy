@@ -38,7 +38,8 @@ import { ToggleWidth } from './Nav.js';
 import { Dispcatsett } from './dispcatgsettings.js';
 import { disArea } from './disArea.js';
 import { DispAreasett } from './disAreaSet.js';
-
+import {ingrdsSet} from './IngredientsSet.js';
+import {ingrds} from './Ingredients.js';
 Loader.fadeOutLoader();
 
 mealFetcher.getMultipleMeals(50).then(meals => {
@@ -72,3 +73,5 @@ const discat1 = new discat("#categories");
 const disset1 = new Dispcatsett("#categories");
 const disArea1 = new disArea("#area");
 const DispAreasett1 = new DispAreasett("#area");
+const ingrdsSet1 = new ingrdsSet("#ingredients");
+const ingrds1 = new ingrds("#ingredients");
